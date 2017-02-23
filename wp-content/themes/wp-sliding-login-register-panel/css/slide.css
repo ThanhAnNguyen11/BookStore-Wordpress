@@ -1,0 +1,224 @@
+/*
+Name: Sliding Login | Register Panel with jQuery
+Author: The Factory
+Author URI: http://www.thefactoryreno.com/
+Date: February 21, 2013
+Version: 2.3
+*/
+
+/***** clearfix *****/
+.clear {clear: both;height: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* sliding panel */
+#toppanel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	background: #252525;
+	background: url("../images/login-bg.jpg") repeat scroll 0 0 transparent !important;
+    box-shadow: 0 0 3px #000000;
+}
+
+#loginpanel h1, #registerpanel h1 {
+	font-size: 1.6em;
+	padding: 5px 0 10px;
+	margin: 0;
+	color: white;
+	text-align: left;
+}
+
+#loginpanel h2, #registerpanel h2 {
+	font-size: 1.2em;
+	padding: 10px 0 5px;
+	margin: 0;
+	color: white;
+	text-align: left;
+}
+
+#loginpanel p, #registerpanel p {
+	margin: 5px 0;
+	padding: 0;
+}
+
+#loginpanel a, #registerpanel a {
+	text-decoration: none;
+	color: #15ADFF;
+}
+
+#loginpanel a:hover, #registerpanel a:hover {
+	color: white;
+}
+
+#loginpanel a-lost-pwd {
+	display: block;
+	float: left;
+}
+
+#loginpanel ul, #registerpanel ul {
+	margin: 0 0 5px 0;
+	padding: 0;
+	line-height: 1.6em;
+	list-style: none;
+}
+
+#loginpanel .content {
+	width: 212px;
+	margin: 0 auto;
+	padding: 15px;
+	text-align: left;
+	font-size: 0.85em;
+}
+
+#registerpanel .content {
+	width: 213px;
+	margin: 0 auto;
+	padding: 15px;
+	text-align: left;
+	font-size: 0.85em;	
+}
+
+#loginpanel .content form, 
+#registerpanel .content form {
+	margin: 0 0 10px 0;
+}
+
+#loginpanel .content label,
+#registerpanel .content label {
+	float: left;
+	padding-top: 8px;
+	clear: both;
+	width: 200px;
+	display: block;
+}
+
+#loginpanel .content input.field,
+#registerpanel .content input.field {
+	border: 1px #1A1A1A solid;
+	background: #414141;
+	width: 200px;
+	color: white;
+	height: 16px;
+}
+
+#loginpanel .content input:focus.field,
+#registerpanel .content input:focus.field {
+	background: #ffffff;
+	border: medium none;
+	box-shadow: 0 0 3px #ffffff;
+	color: #000000;
+}
+
+#loginpanel .content input.bt_login,
+#registerpanel .content input.bt_register {
+	display: block;
+	float: left;
+	clear: left;
+	height: 24px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+#loginpanel .content input.bt_login {
+	width: 74px;
+}
+
+#registerpanel .content input.bt_register {
+	width: 94px;
+}
+
+#panel .content ul li {
+	/*font-size: 12px ;
+        line-height: 18px ;*/
+}
+
+#loginpanel .lost-pwd {
+	display: block;
+	float:left;
+	clear: right;
+	padding: 15px 5px 0;
+	font-size: 0.95em;
+	text-decoration: underline;
+}
+
+#loginpanel {
+    background: none repeat scroll 0 0 #272727;
+    color: #999999;
+    position: absolute;
+    right: 249px;
+    top: 42px;
+    width: 250px;
+	z-index: 1000;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#registerpanel {
+	background: none repeat scroll 0 0 #272727;
+    color: #999999;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    width: 250px;
+	z-index: 1000;
+	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.tab {
+	height: 42px;
+	position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.tab ul.login {
+	display: block;
+	position: absolute;
+  	height: 42px;
+	width: 403px;
+  	font-weight: bold;
+	line-height: 42px;
+	margin: 0;
+	right: 0;
+  	color: white;
+  	font-size: 12px;
+}
+
+.tab ul.login li {
+ 	text-align: left;
+  	padding: 0 6px;
+	display: block;
+	float: left;
+	height: 42px;
+}
+
+.tab ul.login small {
+	font-weight: normal;
+	font-size: 12px;
+	color: BBBBBB;
+}
+
+.tab ul.login li a {
+	color: #BBBBBB;
+}
+
+.tab ul.login li a:hover {
+	color: white;
+}
+
+.tab .sep {color:#414141}
